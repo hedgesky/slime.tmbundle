@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>contactEmail</key>
+  <string>hedgesky@gmail.com</string>
+  <key>contactName</key>
+  <string>Anton Chuchkalov</string>
+  <key>description</key>
+  <string>Slime is an Elixir library for rendering Slim-like templates as HTML.</string>
+  <key>name</key>
+  <string>Slime</string>
+  <key>ordering</key>
+  <array>
+    <string>7b71e243-7853-483d-a76f-c5075099d2bc</string>
+    <string>0bd961a8-e732-417a-8b46-bf6d37cb935e</string>
+  </array>
+  <key>uuid</key>
+  <string>cff435c6-468c-4679-92a8-979751f54df2</string>
+</dict>
+</plist>
