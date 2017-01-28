@@ -43,6 +43,7 @@
 				</dict>
 			</array>
 		</dict>
+
 		<dict>
 			<key>begin</key>
 			<string>^(\s*)(javascript):$</string>
@@ -66,83 +67,7 @@
 				</dict>
 			</array>
 		</dict>
-		<dict>
-			<key>begin</key>
-			<string>^(---)\s*\n</string>
-			<key>beginCaptures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>storage.frontmatter.slime</string>
-				</dict>
-			</dict>
-			<key>end</key>
-			<string>^(---)\s*\n</string>
-			<key>endCaptures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>storage.frontmatter.slime</string>
-				</dict>
-			</dict>
-			<key>name</key>
-			<string>source.yaml.meta.slime</string>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>include</key>
-					<string>source.yaml</string>
-				</dict>
-			</array>
-		</dict>
-		<dict>
-			<key>begin</key>
-			<string>^(\s*)(coffee):$</string>
-			<key>beginCaptures</key>
-			<dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>constant.language.name.coffeescript.filter.slime</string>
-				</dict>
-			</dict>
-			<key>end</key>
-			<string>^(?!(\1\s)|\s*$)</string>
-			<key>name</key>
-			<string>text.coffeescript.filter.slime</string>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>include</key>
-					<string>source.coffee</string>
-				</dict>
-			</array>
-		</dict>
-		<dict>
-			<key>begin</key>
-			<string>^(\s*)(markdown):$</string>
-			<key>beginCaptures</key>
-			<dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>constant.language.name.markdown.filter.slime</string>
-				</dict>
-			</dict>
-			<key>end</key>
-			<string>^(?!(\1\s)|\s*$)</string>
-			<key>name</key>
-			<string>text.markdown.filter.slime</string>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>include</key>
-					<string>source.md</string>
-				</dict>
-			</array>
-		</dict>
+
 		<dict>
 			<key>begin</key>
 			<string>^(\s*)(css):$</string>
@@ -166,52 +91,7 @@
 				</dict>
 			</array>
 		</dict>
-		<dict>
-			<key>begin</key>
-			<string>^(\s*)(sass):$</string>
-			<key>beginCaptures</key>
-			<dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>constant.language.name.sass.filter.slime</string>
-				</dict>
-			</dict>
-			<key>end</key>
-			<string>^(?!(\1\s)|\s*$)</string>
-			<key>name</key>
-			<string>text.sass.filter.slime</string>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>include</key>
-					<string>source.sass</string>
-				</dict>
-			</array>
-		</dict>
-		<dict>
-			<key>begin</key>
-			<string>^(\s*)(scss):$</string>
-			<key>beginCaptures</key>
-			<dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>constant.language.name.scss.filter.slime</string>
-				</dict>
-			</dict>
-			<key>end</key>
-			<string>^(?!(\1\s)|\s*$)</string>
-			<key>name</key>
-			<string>text.scss.filter.slime</string>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>include</key>
-					<string>source.sass</string>
-				</dict>
-			</array>
-		</dict>
+
 		<dict>
 			<key>captures</key>
 			<dict>
@@ -240,6 +120,7 @@
 			<key>name</key>
 			<string>comment.line.slash.slime</string>
 		</dict>
+
 		<dict>
 			<key>begin</key>
 			<string>^(\s*)(/)\s*$</string>
@@ -263,6 +144,7 @@
 				</dict>
 			</array>
 		</dict>
+
 		<dict>
 			<key>begin</key>
 			<string>^\s*(?===|=|-|~)</string>
@@ -288,6 +170,7 @@
 			<key>include</key>
 			<string>#embedded-elixir</string>
 		</dict>
+
 		<dict>
 			<key>begin</key>
 			<string>^\s*([\w.#_-]*[\w]+)\s*</string>
@@ -353,6 +236,7 @@
 				</dict>
 			</array>
 		</dict>
+
 		<dict>
 			<key>captures</key>
 			<dict>
@@ -365,6 +249,7 @@
 			<key>match</key>
 			<string>^\s*(\\.)</string>
 		</dict>
+
 		<dict>
 			<key>begin</key>
 			<string>^\s*(?=\||')</string>
@@ -383,6 +268,9 @@
 			</array>
 		</dict>
 	</array>
+
+
+
 	<key>repository</key>
 	<dict>
 		<key>continuation</key>
@@ -398,6 +286,7 @@
 			<key>match</key>
 			<string>([\\,])\s*\n</string>
 		</dict>
+
 		<key>embedded-elixir</key>
 		<dict>
 			<key>begin</key>
@@ -430,6 +319,7 @@
 				</dict>
 			</array>
 		</dict>
+
 		<key>entities</key>
 		<dict>
 			<key>patterns</key>
@@ -461,6 +351,7 @@
 				</dict>
 			</array>
 		</dict>
+
 		<key>inline-html-tag</key>
 		<dict>
 			<key>begin</key>
@@ -517,6 +408,7 @@
 				</dict>
 			</array>
 		</dict>
+
 		<key>interpolated-elixir</key>
 		<dict>
 			<key>begin</key>
@@ -526,6 +418,7 @@
 			<key>name</key>
 			<string>source.elixir.embedded.html</string>
 		</dict>
+
 		<key>normal-html-tag</key>
 		<dict>
 			<key>begin</key>
@@ -556,6 +449,7 @@
 				</dict>
 			</array>
 		</dict>
+
 		<key>normal-inline-html-tag</key>
 		<dict>
 			<key>begin</key>
@@ -578,12 +472,13 @@
 				</dict>
 			</array>
 		</dict>
+
 		<key>elixirline</key>
 		<dict>
 			<key>begin</key>
 			<string>(==|=)(&lt;&gt;|&gt;&lt;|&lt;'|'&lt;|&lt;|&gt;|')?|-</string>
 			<key>contentName</key>
-			<string>source.elixir.embedded.haml</string>
+			<string>source.elixir.embedded.slime</string>
 			<key>end</key>
 			<string>((do|\{)( \|[^|]+\|)?)$|$|^(?!.*\|\s*$)</string>
 			<key>endCaptures</key>
@@ -600,7 +495,7 @@
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>meta.line.elixir.haml</string>
+			<string>meta.line.elixir.slime</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -621,6 +516,7 @@
 				</dict>
 			</array>
 		</dict>
+
 		<key>string-double-quoted</key>
 		<dict>
 			<key>begin</key>
@@ -659,6 +555,7 @@
 				</dict>
 			</array>
 		</dict>
+
 		<key>string-single-quoted</key>
 		<dict>
 			<key>begin</key>
@@ -697,6 +594,7 @@
 				</dict>
 			</array>
 		</dict>
+
 		<key>tag-id-attribute</key>
 		<dict>
 			<key>begin</key>
@@ -730,6 +628,7 @@
 				</dict>
 			</array>
 		</dict>
+
 		<key>tag-stuff</key>
 		<dict>
 			<key>patterns</key>
@@ -760,6 +659,7 @@
 				</dict>
 			</array>
 		</dict>
+
 	</dict>
 	<key>scopeName</key>
 	<string>text.slime</string>
